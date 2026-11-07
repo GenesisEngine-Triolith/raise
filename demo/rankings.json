@@ -1,0 +1,2326 @@
+{
+  "Northwind Ventures|Ada Lindqvist": {
+    "thesis": {
+      "score": 6,
+      "evidence": [
+        "ev-northwind-ventures-2",
+        "ev-northwind-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 6,
+      "evidence": [
+        "ev-northwind-ventures-1",
+        "ev-northwind-ventures-4"
+      ]
+    },
+    "recency": {
+      "score": 8,
+      "evidence": [
+        "ev-northwind-ventures-1",
+        "ev-northwind-ventures-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 7,
+      "evidence": [
+        "ev-northwind-ventures-3",
+        "ev-northwind-ventures-2"
+      ]
+    },
+    "lead": {
+      "score": 9,
+      "evidence": [
+        "ev-northwind-ventures-1",
+        "ev-northwind-ventures-4"
+      ]
+    },
+    "fund_cycle": {
+      "score": 8,
+      "evidence": [
+        "ev-northwind-ventures-3",
+        "ev-northwind-ventures-1"
+      ]
+    },
+    "value_add": {
+      "score": 9,
+      "evidence": [
+        "ev-northwind-ventures-ada-1",
+        "ev-northwind-ventures-2"
+      ]
+    },
+    "content": {
+      "score": 9,
+      "evidence": [
+        "ev-northwind-ventures-ada-1",
+        "ev-northwind-ventures-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "Northwind Ventures|Jonas Brandt": {
+    "thesis": {
+      "score": 8,
+      "evidence": [
+        "ev-northwind-ventures-2",
+        "ev-northwind-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 7,
+      "evidence": [
+        "ev-northwind-ventures-1",
+        "ev-northwind-ventures-4"
+      ]
+    },
+    "recency": {
+      "score": 8,
+      "evidence": [
+        "ev-northwind-ventures-1",
+        "ev-northwind-ventures-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 8,
+      "evidence": [
+        "ev-northwind-ventures-3",
+        "ev-northwind-ventures-2"
+      ]
+    },
+    "lead": {
+      "score": 10,
+      "evidence": [
+        "ev-northwind-ventures-1",
+        "ev-northwind-ventures-4"
+      ]
+    },
+    "fund_cycle": {
+      "score": 7,
+      "evidence": [
+        "ev-northwind-ventures-3",
+        "ev-northwind-ventures-1"
+      ]
+    },
+    "value_add": {
+      "score": 9,
+      "evidence": [
+        "ev-northwind-ventures-jonas-1",
+        "ev-northwind-ventures-2"
+      ]
+    },
+    "content": {
+      "score": 8,
+      "evidence": [
+        "ev-northwind-ventures-jonas-1",
+        "ev-northwind-ventures-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Fjordlight Capital|Maja Sterner": {
+    "thesis": {
+      "score": 6,
+      "evidence": [
+        "ev-fjordlight-capital-2",
+        "ev-fjordlight-capital-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 6,
+      "evidence": [
+        "ev-fjordlight-capital-1"
+      ]
+    },
+    "recency": {
+      "score": 8,
+      "evidence": [
+        "ev-fjordlight-capital-1",
+        "ev-fjordlight-capital-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 9,
+      "evidence": [
+        "ev-fjordlight-capital-3",
+        "ev-fjordlight-capital-2"
+      ]
+    },
+    "lead": {
+      "score": 9,
+      "evidence": [
+        "ev-fjordlight-capital-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 7,
+      "evidence": [
+        "ev-fjordlight-capital-4",
+        "ev-fjordlight-capital-3"
+      ]
+    },
+    "value_add": {
+      "score": 6,
+      "evidence": [
+        "ev-fjordlight-capital-2"
+      ]
+    },
+    "content": {
+      "score": 6,
+      "evidence": [
+        "ev-fjordlight-capital-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Halvard Partners|Erik Dahlmann": {
+    "thesis": {
+      "score": 8,
+      "evidence": [
+        "ev-halvard-partners-2",
+        "ev-halvard-partners-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 8,
+      "evidence": [
+        "ev-halvard-partners-1"
+      ]
+    },
+    "recency": {
+      "score": 7,
+      "evidence": [
+        "ev-halvard-partners-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 6,
+      "evidence": [
+        "ev-halvard-partners-3",
+        "ev-halvard-partners-2"
+      ]
+    },
+    "lead": {
+      "score": 8,
+      "evidence": [
+        "ev-halvard-partners-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 7,
+      "evidence": [
+        "ev-halvard-partners-3",
+        "ev-halvard-partners-1"
+      ]
+    },
+    "value_add": {
+      "score": 9,
+      "evidence": [
+        "ev-halvard-partners-erik-1",
+        "ev-halvard-partners-2"
+      ]
+    },
+    "content": {
+      "score": 8,
+      "evidence": [
+        "ev-halvard-partners-erik-1",
+        "ev-halvard-partners-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "Halvard Partners|Sofie Nyren": {
+    "thesis": {
+      "score": 6,
+      "evidence": [
+        "ev-halvard-partners-2",
+        "ev-halvard-partners-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 6,
+      "evidence": [
+        "ev-halvard-partners-1"
+      ]
+    },
+    "recency": {
+      "score": 9,
+      "evidence": [
+        "ev-halvard-partners-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 8,
+      "evidence": [
+        "ev-halvard-partners-3",
+        "ev-halvard-partners-2"
+      ]
+    },
+    "lead": {
+      "score": 8,
+      "evidence": [
+        "ev-halvard-partners-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 6,
+      "evidence": [
+        "ev-halvard-partners-3",
+        "ev-halvard-partners-1"
+      ]
+    },
+    "value_add": {
+      "score": 6,
+      "evidence": [
+        "ev-halvard-partners-sofie-1",
+        "ev-halvard-partners-2"
+      ]
+    },
+    "content": {
+      "score": 6,
+      "evidence": [
+        "ev-halvard-partners-sofie-1",
+        "ev-halvard-partners-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "Birchmoor Ventures|Tomas Revelius": {
+    "thesis": {
+      "score": 7,
+      "evidence": [
+        "ev-birchmoor-ventures-2",
+        "ev-birchmoor-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 9,
+      "evidence": [
+        "ev-birchmoor-ventures-1"
+      ]
+    },
+    "recency": {
+      "score": 9,
+      "evidence": [
+        "ev-birchmoor-ventures-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 8,
+      "evidence": [
+        "ev-birchmoor-ventures-3",
+        "ev-birchmoor-ventures-2"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": [
+        "ev-birchmoor-ventures-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 7,
+      "evidence": [
+        "ev-birchmoor-ventures-3",
+        "ev-birchmoor-ventures-1"
+      ]
+    },
+    "value_add": {
+      "score": 10,
+      "evidence": [
+        "ev-birchmoor-ventures-2"
+      ]
+    },
+    "content": {
+      "score": 9,
+      "evidence": [
+        "ev-birchmoor-ventures-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "Quillstone Capital|Ingrid Aasen": {
+    "thesis": {
+      "score": 7,
+      "evidence": [
+        "ev-quillstone-capital-2",
+        "ev-quillstone-capital-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 8,
+      "evidence": [
+        "ev-quillstone-capital-1",
+        "ev-quillstone-capital-4"
+      ]
+    },
+    "recency": {
+      "score": 8,
+      "evidence": [
+        "ev-quillstone-capital-1",
+        "ev-quillstone-capital-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 6,
+      "evidence": [
+        "ev-quillstone-capital-3",
+        "ev-quillstone-capital-2"
+      ]
+    },
+    "lead": {
+      "score": 9,
+      "evidence": [
+        "ev-quillstone-capital-1",
+        "ev-quillstone-capital-4"
+      ]
+    },
+    "fund_cycle": {
+      "score": 6,
+      "evidence": [
+        "ev-quillstone-capital-3",
+        "ev-quillstone-capital-1"
+      ]
+    },
+    "value_add": {
+      "score": 9,
+      "evidence": [
+        "ev-quillstone-capital-2"
+      ]
+    },
+    "content": {
+      "score": 6,
+      "evidence": [
+        "ev-quillstone-capital-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "Saltmarsh Fund|Pieter Vandermeer": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-saltmarsh-fund-2",
+        "ev-saltmarsh-fund-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 7,
+      "evidence": [
+        "ev-saltmarsh-fund-1"
+      ]
+    },
+    "recency": {
+      "score": 7,
+      "evidence": [
+        "ev-saltmarsh-fund-1",
+        "ev-saltmarsh-fund-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 4,
+      "evidence": [
+        "ev-saltmarsh-fund-3",
+        "ev-saltmarsh-fund-2"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": []
+    },
+    "fund_cycle": {
+      "score": 4,
+      "evidence": [
+        "ev-saltmarsh-fund-4",
+        "ev-saltmarsh-fund-3"
+      ]
+    },
+    "value_add": {
+      "score": 4,
+      "evidence": [
+        "ev-saltmarsh-fund-2"
+      ]
+    },
+    "content": {
+      "score": 4,
+      "evidence": [
+        "ev-saltmarsh-fund-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "Kelderhaus Ventures|Lotte Hendriks": {
+    "thesis": {
+      "score": 6,
+      "evidence": [
+        "ev-kelderhaus-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 5,
+      "evidence": [
+        "ev-kelderhaus-ventures-1"
+      ]
+    },
+    "recency": {
+      "score": 6,
+      "evidence": [
+        "ev-kelderhaus-ventures-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 6,
+      "evidence": [
+        "ev-kelderhaus-ventures-1"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": []
+    },
+    "fund_cycle": {
+      "score": 6,
+      "evidence": [
+        "ev-kelderhaus-ventures-1"
+      ]
+    },
+    "value_add": {
+      "score": 3,
+      "evidence": [
+        "ev-kelderhaus-ventures-2",
+        "ev-kelderhaus-ventures-1"
+      ]
+    },
+    "content": {
+      "score": 3,
+      "evidence": [
+        "ev-kelderhaus-ventures-2",
+        "ev-kelderhaus-ventures-1"
+      ]
+    },
+    "reachability": {
+      "score": 0,
+      "evidence": []
+    }
+  },
+  "Ravenhill Partners|Oskar Fenwick": {
+    "thesis": {
+      "score": 7,
+      "evidence": [
+        "ev-ravenhill-partners-2",
+        "ev-ravenhill-partners-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 10,
+      "evidence": [
+        "ev-ravenhill-partners-1"
+      ]
+    },
+    "recency": {
+      "score": 7,
+      "evidence": [
+        "ev-ravenhill-partners-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 8,
+      "evidence": [
+        "ev-ravenhill-partners-3",
+        "ev-ravenhill-partners-2"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": [
+        "ev-ravenhill-partners-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 10,
+      "evidence": [
+        "ev-ravenhill-partners-3",
+        "ev-ravenhill-partners-1"
+      ]
+    },
+    "value_add": {
+      "score": 10,
+      "evidence": [
+        "ev-ravenhill-partners-oskar-1",
+        "ev-ravenhill-partners-2"
+      ]
+    },
+    "content": {
+      "score": 9,
+      "evidence": [
+        "ev-ravenhill-partners-oskar-1",
+        "ev-ravenhill-partners-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Ravenhill Partners|Clara Mattson": {
+    "thesis": {
+      "score": 8,
+      "evidence": [
+        "ev-ravenhill-partners-2",
+        "ev-ravenhill-partners-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 8,
+      "evidence": [
+        "ev-ravenhill-partners-1"
+      ]
+    },
+    "recency": {
+      "score": 7,
+      "evidence": [
+        "ev-ravenhill-partners-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 7,
+      "evidence": [
+        "ev-ravenhill-partners-3",
+        "ev-ravenhill-partners-2"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": [
+        "ev-ravenhill-partners-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 8,
+      "evidence": [
+        "ev-ravenhill-partners-3",
+        "ev-ravenhill-partners-1"
+      ]
+    },
+    "value_add": {
+      "score": 9,
+      "evidence": [
+        "ev-ravenhill-partners-clara-1",
+        "ev-ravenhill-partners-2"
+      ]
+    },
+    "content": {
+      "score": 9,
+      "evidence": [
+        "ev-ravenhill-partners-clara-1",
+        "ev-ravenhill-partners-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Tarnlode Capital|Henrik Solvang": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-tarnlode-capital-2",
+        "ev-tarnlode-capital-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 5,
+      "evidence": [
+        "ev-tarnlode-capital-1",
+        "ev-tarnlode-capital-4"
+      ]
+    },
+    "recency": {
+      "score": 4,
+      "evidence": [
+        "ev-tarnlode-capital-1",
+        "ev-tarnlode-capital-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 3,
+      "evidence": [
+        "ev-tarnlode-capital-3",
+        "ev-tarnlode-capital-2"
+      ]
+    },
+    "lead": {
+      "score": 5,
+      "evidence": [
+        "ev-tarnlode-capital-1",
+        "ev-tarnlode-capital-4"
+      ]
+    },
+    "fund_cycle": {
+      "score": 3,
+      "evidence": [
+        "ev-tarnlode-capital-3",
+        "ev-tarnlode-capital-1"
+      ]
+    },
+    "value_add": {
+      "score": 3,
+      "evidence": [
+        "ev-tarnlode-capital-2"
+      ]
+    },
+    "content": {
+      "score": 5,
+      "evidence": [
+        "ev-tarnlode-capital-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Wrenfield Ventures|Anneli Korpela": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-wrenfield-ventures-2",
+        "ev-wrenfield-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 3,
+      "evidence": [
+        "ev-wrenfield-ventures-1"
+      ]
+    },
+    "recency": {
+      "score": 3,
+      "evidence": [
+        "ev-wrenfield-ventures-1",
+        "ev-wrenfield-ventures-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 3,
+      "evidence": [
+        "ev-wrenfield-ventures-3",
+        "ev-wrenfield-ventures-2"
+      ]
+    },
+    "lead": {
+      "score": 5,
+      "evidence": [
+        "ev-wrenfield-ventures-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 4,
+      "evidence": [
+        "ev-wrenfield-ventures-4",
+        "ev-wrenfield-ventures-3"
+      ]
+    },
+    "value_add": {
+      "score": 2,
+      "evidence": [
+        "ev-wrenfield-ventures-2"
+      ]
+    },
+    "content": {
+      "score": 2,
+      "evidence": [
+        "ev-wrenfield-ventures-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Copperleaf Capital|Matthias Eberle": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-copperleaf-capital-2",
+        "ev-copperleaf-capital-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 3,
+      "evidence": [
+        "ev-copperleaf-capital-1"
+      ]
+    },
+    "recency": {
+      "score": 6,
+      "evidence": [
+        "ev-copperleaf-capital-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 6,
+      "evidence": [
+        "ev-copperleaf-capital-3",
+        "ev-copperleaf-capital-2"
+      ]
+    },
+    "lead": {
+      "score": 5,
+      "evidence": [
+        "ev-copperleaf-capital-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 4,
+      "evidence": [
+        "ev-copperleaf-capital-3",
+        "ev-copperleaf-capital-1"
+      ]
+    },
+    "value_add": {
+      "score": 6,
+      "evidence": [
+        "ev-copperleaf-capital-2"
+      ]
+    },
+    "content": {
+      "score": 6,
+      "evidence": [
+        "ev-copperleaf-capital-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Stillwater Seed|Nadia Okonski": {
+    "thesis": {
+      "score": 9,
+      "evidence": [
+        "ev-stillwater-seed-2",
+        "ev-stillwater-seed-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 10,
+      "evidence": [
+        "ev-stillwater-seed-1"
+      ]
+    },
+    "recency": {
+      "score": 9,
+      "evidence": [
+        "ev-stillwater-seed-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 7,
+      "evidence": [
+        "ev-stillwater-seed-3",
+        "ev-stillwater-seed-2"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": [
+        "ev-stillwater-seed-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 9,
+      "evidence": [
+        "ev-stillwater-seed-3",
+        "ev-stillwater-seed-1"
+      ]
+    },
+    "value_add": {
+      "score": 7,
+      "evidence": [
+        "ev-stillwater-seed-2"
+      ]
+    },
+    "content": {
+      "score": 9,
+      "evidence": [
+        "ev-stillwater-seed-2"
+      ]
+    },
+    "reachability": {
+      "score": 10,
+      "evidence": []
+    }
+  },
+  "Lindenholt Ventures|Viktor Arnesen": {
+    "thesis": {
+      "score": 7,
+      "evidence": [
+        "ev-lindenholt-ventures-2",
+        "ev-lindenholt-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 7,
+      "evidence": [
+        "ev-lindenholt-ventures-1",
+        "ev-lindenholt-ventures-4"
+      ]
+    },
+    "recency": {
+      "score": 5,
+      "evidence": [
+        "ev-lindenholt-ventures-1",
+        "ev-lindenholt-ventures-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 6,
+      "evidence": [
+        "ev-lindenholt-ventures-3",
+        "ev-lindenholt-ventures-2"
+      ]
+    },
+    "lead": {
+      "score": 8,
+      "evidence": [
+        "ev-lindenholt-ventures-1",
+        "ev-lindenholt-ventures-4"
+      ]
+    },
+    "fund_cycle": {
+      "score": 8,
+      "evidence": [
+        "ev-lindenholt-ventures-3",
+        "ev-lindenholt-ventures-1"
+      ]
+    },
+    "value_add": {
+      "score": 6,
+      "evidence": [
+        "ev-lindenholt-ventures-2"
+      ]
+    },
+    "content": {
+      "score": 5,
+      "evidence": [
+        "ev-lindenholt-ventures-2"
+      ]
+    },
+    "reachability": {
+      "score": 5,
+      "evidence": []
+    }
+  },
+  "Marrowgate Partners|Elin Bergstrand": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-marrowgate-partners-2",
+        "ev-marrowgate-partners-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 4,
+      "evidence": [
+        "ev-marrowgate-partners-1"
+      ]
+    },
+    "recency": {
+      "score": 3,
+      "evidence": [
+        "ev-marrowgate-partners-1",
+        "ev-marrowgate-partners-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 3,
+      "evidence": [
+        "ev-marrowgate-partners-3",
+        "ev-marrowgate-partners-2"
+      ]
+    },
+    "lead": {
+      "score": 6,
+      "evidence": [
+        "ev-marrowgate-partners-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 3,
+      "evidence": [
+        "ev-marrowgate-partners-4",
+        "ev-marrowgate-partners-3"
+      ]
+    },
+    "value_add": {
+      "score": 5,
+      "evidence": [
+        "ev-marrowgate-partners-2"
+      ]
+    },
+    "content": {
+      "score": 3,
+      "evidence": [
+        "ev-marrowgate-partners-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Ashgrove Capital|Rasmus Toft": {
+    "thesis": {
+      "score": 3,
+      "evidence": [
+        "ev-ashgrove-capital-2",
+        "ev-ashgrove-capital-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 5,
+      "evidence": [
+        "ev-ashgrove-capital-1"
+      ]
+    },
+    "recency": {
+      "score": 4,
+      "evidence": [
+        "ev-ashgrove-capital-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 3,
+      "evidence": [
+        "ev-ashgrove-capital-3",
+        "ev-ashgrove-capital-2"
+      ]
+    },
+    "lead": {
+      "score": 2,
+      "evidence": [
+        "ev-ashgrove-capital-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 5,
+      "evidence": [
+        "ev-ashgrove-capital-3",
+        "ev-ashgrove-capital-1"
+      ]
+    },
+    "value_add": {
+      "score": 2,
+      "evidence": [
+        "ev-ashgrove-capital-2"
+      ]
+    },
+    "content": {
+      "score": 3,
+      "evidence": [
+        "ev-ashgrove-capital-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Pinecrest Nordic Fund|Helga Vinter": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-pinecrest-nordic-fund-2",
+        "ev-pinecrest-nordic-fund-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 4,
+      "evidence": [
+        "ev-pinecrest-nordic-fund-1"
+      ]
+    },
+    "recency": {
+      "score": 3,
+      "evidence": [
+        "ev-pinecrest-nordic-fund-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 5,
+      "evidence": [
+        "ev-pinecrest-nordic-fund-3",
+        "ev-pinecrest-nordic-fund-2"
+      ]
+    },
+    "lead": {
+      "score": 3,
+      "evidence": [
+        "ev-pinecrest-nordic-fund-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 2,
+      "evidence": [
+        "ev-pinecrest-nordic-fund-3",
+        "ev-pinecrest-nordic-fund-1"
+      ]
+    },
+    "value_add": {
+      "score": 5,
+      "evidence": [
+        "ev-pinecrest-nordic-fund-2"
+      ]
+    },
+    "content": {
+      "score": 5,
+      "evidence": [
+        "ev-pinecrest-nordic-fund-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Mossbank Ventures|Dag Lundmark": {
+    "thesis": {
+      "score": 5,
+      "evidence": [
+        "ev-mossbank-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 5,
+      "evidence": [
+        "ev-mossbank-ventures-1"
+      ]
+    },
+    "recency": {
+      "score": 3,
+      "evidence": [
+        "ev-mossbank-ventures-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 2,
+      "evidence": [
+        "ev-mossbank-ventures-1"
+      ]
+    },
+    "lead": {
+      "score": 5,
+      "evidence": [
+        "ev-mossbank-ventures-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 4,
+      "evidence": [
+        "ev-mossbank-ventures-1"
+      ]
+    },
+    "value_add": {
+      "score": 5,
+      "evidence": [
+        "ev-mossbank-ventures-2",
+        "ev-mossbank-ventures-1"
+      ]
+    },
+    "content": {
+      "score": 4,
+      "evidence": [
+        "ev-mossbank-ventures-2",
+        "ev-mossbank-ventures-1"
+      ]
+    },
+    "reachability": {
+      "score": 3,
+      "evidence": []
+    }
+  },
+  "Harrowby Capital|Freya Collins": {
+    "thesis": {
+      "score": 2,
+      "evidence": [
+        "ev-harrowby-capital-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 2,
+      "evidence": [
+        "ev-harrowby-capital-1"
+      ]
+    },
+    "recency": {
+      "score": 3,
+      "evidence": [
+        "ev-harrowby-capital-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 3,
+      "evidence": [
+        "ev-harrowby-capital-1"
+      ]
+    },
+    "lead": {
+      "score": 5,
+      "evidence": [
+        "ev-harrowby-capital-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 2,
+      "evidence": [
+        "ev-harrowby-capital-1"
+      ]
+    },
+    "value_add": {
+      "score": 4,
+      "evidence": [
+        "ev-harrowby-capital-2",
+        "ev-harrowby-capital-1"
+      ]
+    },
+    "content": {
+      "score": 4,
+      "evidence": [
+        "ev-harrowby-capital-2",
+        "ev-harrowby-capital-1"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "Everfield Partners|Luca Brandini": {
+    "thesis": {
+      "score": 3,
+      "evidence": [
+        "ev-everfield-partners-2",
+        "ev-everfield-partners-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 5,
+      "evidence": [
+        "ev-everfield-partners-1"
+      ]
+    },
+    "recency": {
+      "score": 3,
+      "evidence": [
+        "ev-everfield-partners-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 3,
+      "evidence": [
+        "ev-everfield-partners-3",
+        "ev-everfield-partners-2"
+      ]
+    },
+    "lead": {
+      "score": 6,
+      "evidence": [
+        "ev-everfield-partners-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 5,
+      "evidence": [
+        "ev-everfield-partners-3",
+        "ev-everfield-partners-1"
+      ]
+    },
+    "value_add": {
+      "score": 6,
+      "evidence": [
+        "ev-everfield-partners-2"
+      ]
+    },
+    "content": {
+      "score": 5,
+      "evidence": [
+        "ev-everfield-partners-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Glimmerholt VC|Siri Almqvist": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-glimmerholt-vc-2",
+        "ev-glimmerholt-vc-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 5,
+      "evidence": [
+        "ev-glimmerholt-vc-1"
+      ]
+    },
+    "recency": {
+      "score": 4,
+      "evidence": [
+        "ev-glimmerholt-vc-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 7,
+      "evidence": [
+        "ev-glimmerholt-vc-3",
+        "ev-glimmerholt-vc-2"
+      ]
+    },
+    "lead": {
+      "score": 4,
+      "evidence": [
+        "ev-glimmerholt-vc-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 5,
+      "evidence": [
+        "ev-glimmerholt-vc-3",
+        "ev-glimmerholt-vc-1"
+      ]
+    },
+    "value_add": {
+      "score": 6,
+      "evidence": [
+        "ev-glimmerholt-vc-2"
+      ]
+    },
+    "content": {
+      "score": 5,
+      "evidence": [
+        "ev-glimmerholt-vc-2"
+      ]
+    },
+    "reachability": {
+      "score": 3,
+      "evidence": []
+    }
+  },
+  "Oakhallow Ventures|Gustav Persby": {
+    "thesis": {
+      "score": 5,
+      "evidence": [
+        "ev-oakhallow-ventures-2",
+        "ev-oakhallow-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 7,
+      "evidence": [
+        "ev-oakhallow-ventures-1",
+        "ev-oakhallow-ventures-4"
+      ]
+    },
+    "recency": {
+      "score": 7,
+      "evidence": [
+        "ev-oakhallow-ventures-1",
+        "ev-oakhallow-ventures-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 4,
+      "evidence": [
+        "ev-oakhallow-ventures-3",
+        "ev-oakhallow-ventures-2"
+      ]
+    },
+    "lead": {
+      "score": 5,
+      "evidence": [
+        "ev-oakhallow-ventures-1",
+        "ev-oakhallow-ventures-4"
+      ]
+    },
+    "fund_cycle": {
+      "score": 7,
+      "evidence": [
+        "ev-oakhallow-ventures-3",
+        "ev-oakhallow-ventures-1"
+      ]
+    },
+    "value_add": {
+      "score": 6,
+      "evidence": [
+        "ev-oakhallow-ventures-2"
+      ]
+    },
+    "content": {
+      "score": 5,
+      "evidence": [
+        "ev-oakhallow-ventures-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Thistledown Capital|Mira Kallio": {
+    "thesis": {
+      "score": 7,
+      "evidence": [
+        "ev-thistledown-capital-2",
+        "ev-thistledown-capital-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 7,
+      "evidence": [
+        "ev-thistledown-capital-1"
+      ]
+    },
+    "recency": {
+      "score": 8,
+      "evidence": [
+        "ev-thistledown-capital-1",
+        "ev-thistledown-capital-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 6,
+      "evidence": [
+        "ev-thistledown-capital-3",
+        "ev-thistledown-capital-2"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": [
+        "ev-thistledown-capital-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 6,
+      "evidence": [
+        "ev-thistledown-capital-4",
+        "ev-thistledown-capital-3"
+      ]
+    },
+    "value_add": {
+      "score": 7,
+      "evidence": [
+        "ev-thistledown-capital-2"
+      ]
+    },
+    "content": {
+      "score": 8,
+      "evidence": [
+        "ev-thistledown-capital-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "Brightwater Seed|Anders Holmgren": {
+    "thesis": {
+      "score": 5,
+      "evidence": [
+        "ev-brightwater-seed-2",
+        "ev-brightwater-seed-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 2,
+      "evidence": [
+        "ev-brightwater-seed-1"
+      ]
+    },
+    "recency": {
+      "score": 2,
+      "evidence": [
+        "ev-brightwater-seed-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 5,
+      "evidence": [
+        "ev-brightwater-seed-3",
+        "ev-brightwater-seed-2"
+      ]
+    },
+    "lead": {
+      "score": 2,
+      "evidence": [
+        "ev-brightwater-seed-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 2,
+      "evidence": [
+        "ev-brightwater-seed-3",
+        "ev-brightwater-seed-1"
+      ]
+    },
+    "value_add": {
+      "score": 5,
+      "evidence": [
+        "ev-brightwater-seed-2"
+      ]
+    },
+    "content": {
+      "score": 2,
+      "evidence": [
+        "ev-brightwater-seed-2"
+      ]
+    },
+    "reachability": {
+      "score": 3,
+      "evidence": []
+    }
+  },
+  "Cinderfell Ventures|Petra Zaremba": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-cinderfell-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 5,
+      "evidence": [
+        "ev-cinderfell-ventures-1"
+      ]
+    },
+    "recency": {
+      "score": 4,
+      "evidence": [
+        "ev-cinderfell-ventures-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 7,
+      "evidence": [
+        "ev-cinderfell-ventures-1"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": [
+        "ev-cinderfell-ventures-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 7,
+      "evidence": [
+        "ev-cinderfell-ventures-1"
+      ]
+    },
+    "value_add": {
+      "score": 6,
+      "evidence": [
+        "ev-cinderfell-ventures-2",
+        "ev-cinderfell-ventures-1"
+      ]
+    },
+    "content": {
+      "score": 5,
+      "evidence": [
+        "ev-cinderfell-ventures-2",
+        "ev-cinderfell-ventures-1"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Prairie Gate Capital|Dana Whitcombe": {
+    "thesis": {
+      "score": 7,
+      "evidence": [
+        "ev-prairie-gate-capital-2",
+        "ev-prairie-gate-capital-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 5,
+      "evidence": [
+        "ev-prairie-gate-capital-1"
+      ]
+    },
+    "recency": {
+      "score": 6,
+      "evidence": [
+        "ev-prairie-gate-capital-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 7,
+      "evidence": [
+        "ev-prairie-gate-capital-3",
+        "ev-prairie-gate-capital-2"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": [
+        "ev-prairie-gate-capital-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 6,
+      "evidence": [
+        "ev-prairie-gate-capital-3",
+        "ev-prairie-gate-capital-1"
+      ]
+    },
+    "value_add": {
+      "score": 4,
+      "evidence": [
+        "ev-prairie-gate-capital-2"
+      ]
+    },
+    "content": {
+      "score": 5,
+      "evidence": [
+        "ev-prairie-gate-capital-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "Monolith Growth Partners|Rolf Ekstrand": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-monolith-growth-partners-2",
+        "ev-monolith-growth-partners-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 6,
+      "evidence": [
+        "ev-monolith-growth-partners-1"
+      ]
+    },
+    "recency": {
+      "score": 5,
+      "evidence": [
+        "ev-monolith-growth-partners-1",
+        "ev-monolith-growth-partners-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 4,
+      "evidence": [
+        "ev-monolith-growth-partners-3",
+        "ev-monolith-growth-partners-2"
+      ]
+    },
+    "lead": {
+      "score": 4,
+      "evidence": [
+        "ev-monolith-growth-partners-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 5,
+      "evidence": [
+        "ev-monolith-growth-partners-4",
+        "ev-monolith-growth-partners-3"
+      ]
+    },
+    "value_add": {
+      "score": 5,
+      "evidence": [
+        "ev-monolith-growth-partners-2"
+      ]
+    },
+    "content": {
+      "score": 5,
+      "evidence": [
+        "ev-monolith-growth-partners-2"
+      ]
+    },
+    "reachability": {
+      "score": 0,
+      "evidence": []
+    }
+  },
+  "Orchard Lane Ventures|Karin Voss": {
+    "thesis": {
+      "score": 6,
+      "evidence": [
+        "ev-orchard-lane-ventures-2",
+        "ev-orchard-lane-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 6,
+      "evidence": [
+        "ev-orchard-lane-ventures-1"
+      ]
+    },
+    "recency": {
+      "score": 6,
+      "evidence": [
+        "ev-orchard-lane-ventures-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 5,
+      "evidence": [
+        "ev-orchard-lane-ventures-3",
+        "ev-orchard-lane-ventures-2"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": [
+        "ev-orchard-lane-ventures-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 4,
+      "evidence": [
+        "ev-orchard-lane-ventures-3",
+        "ev-orchard-lane-ventures-1"
+      ]
+    },
+    "value_add": {
+      "score": 7,
+      "evidence": [
+        "ev-orchard-lane-ventures-2"
+      ]
+    },
+    "content": {
+      "score": 4,
+      "evidence": [
+        "ev-orchard-lane-ventures-2"
+      ]
+    },
+    "reachability": {
+      "score": 3,
+      "evidence": []
+    }
+  },
+  "Alder Family Office|Bertil Hallgren": {
+    "thesis": {
+      "score": 7,
+      "evidence": [
+        "ev-alder-family-office-2",
+        "ev-alder-family-office-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 6,
+      "evidence": [
+        "ev-alder-family-office-1"
+      ]
+    },
+    "recency": {
+      "score": 8,
+      "evidence": [
+        "ev-alder-family-office-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 5,
+      "evidence": [
+        "ev-alder-family-office-3",
+        "ev-alder-family-office-2"
+      ]
+    },
+    "lead": {
+      "score": 8,
+      "evidence": [
+        "ev-alder-family-office-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 8,
+      "evidence": [
+        "ev-alder-family-office-3",
+        "ev-alder-family-office-1"
+      ]
+    },
+    "value_add": {
+      "score": 6,
+      "evidence": [
+        "ev-alder-family-office-2"
+      ]
+    },
+    "content": {
+      "score": 6,
+      "evidence": [
+        "ev-alder-family-office-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "Sundial Health Ventures|Yara Lindgren": {
+    "thesis": {
+      "score": 6,
+      "evidence": [
+        "ev-sundial-health-ventures-2",
+        "ev-sundial-health-ventures-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 6,
+      "evidence": [
+        "ev-sundial-health-ventures-1",
+        "ev-sundial-health-ventures-4"
+      ]
+    },
+    "recency": {
+      "score": 6,
+      "evidence": [
+        "ev-sundial-health-ventures-1",
+        "ev-sundial-health-ventures-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 6,
+      "evidence": [
+        "ev-sundial-health-ventures-3",
+        "ev-sundial-health-ventures-2"
+      ]
+    },
+    "lead": {
+      "score": 7,
+      "evidence": [
+        "ev-sundial-health-ventures-1",
+        "ev-sundial-health-ventures-4"
+      ]
+    },
+    "fund_cycle": {
+      "score": 6,
+      "evidence": [
+        "ev-sundial-health-ventures-3",
+        "ev-sundial-health-ventures-1"
+      ]
+    },
+    "value_add": {
+      "score": 7,
+      "evidence": [
+        "ev-sundial-health-ventures-2"
+      ]
+    },
+    "content": {
+      "score": 7,
+      "evidence": [
+        "ev-sundial-health-ventures-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "Launchbarn Accelerator|Tobias Ryden": {
+    "thesis": {
+      "score": 3,
+      "evidence": [
+        "ev-launchbarn-accelerator-2",
+        "ev-launchbarn-accelerator-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 3,
+      "evidence": [
+        "ev-launchbarn-accelerator-1"
+      ]
+    },
+    "recency": {
+      "score": 2,
+      "evidence": [
+        "ev-launchbarn-accelerator-1",
+        "ev-launchbarn-accelerator-4"
+      ]
+    },
+    "stage_fit": {
+      "score": 3,
+      "evidence": [
+        "ev-launchbarn-accelerator-3",
+        "ev-launchbarn-accelerator-2"
+      ]
+    },
+    "lead": {
+      "score": 3,
+      "evidence": [
+        "ev-launchbarn-accelerator-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 3,
+      "evidence": [
+        "ev-launchbarn-accelerator-4",
+        "ev-launchbarn-accelerator-3"
+      ]
+    },
+    "value_add": {
+      "score": 2,
+      "evidence": [
+        "ev-launchbarn-accelerator-2"
+      ]
+    },
+    "content": {
+      "score": 4,
+      "evidence": [
+        "ev-launchbarn-accelerator-2"
+      ]
+    },
+    "reachability": {
+      "score": 3,
+      "evidence": []
+    }
+  },
+  "Harbor Circle Angels|Ebba Solheim": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-harbor-circle-angels-2",
+        "ev-harbor-circle-angels-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 7,
+      "evidence": [
+        "ev-harbor-circle-angels-1"
+      ]
+    },
+    "recency": {
+      "score": 7,
+      "evidence": [
+        "ev-harbor-circle-angels-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 5,
+      "evidence": [
+        "ev-harbor-circle-angels-3",
+        "ev-harbor-circle-angels-2"
+      ]
+    },
+    "lead": {
+      "score": 5,
+      "evidence": [
+        "ev-harbor-circle-angels-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 7,
+      "evidence": [
+        "ev-harbor-circle-angels-3",
+        "ev-harbor-circle-angels-1"
+      ]
+    },
+    "value_add": {
+      "score": 4,
+      "evidence": [
+        "ev-harbor-circle-angels-2"
+      ]
+    },
+    "content": {
+      "score": 4,
+      "evidence": [
+        "ev-harbor-circle-angels-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "|Gunnar Aldous": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-gunnar-aldous-2",
+        "ev-gunnar-aldous-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 4,
+      "evidence": [
+        "ev-gunnar-aldous-1"
+      ]
+    },
+    "recency": {
+      "score": 2,
+      "evidence": [
+        "ev-gunnar-aldous-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 4,
+      "evidence": [
+        "ev-gunnar-aldous-3",
+        "ev-gunnar-aldous-2"
+      ]
+    },
+    "lead": {
+      "score": 3,
+      "evidence": [
+        "ev-gunnar-aldous-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 2,
+      "evidence": [
+        "ev-gunnar-aldous-3",
+        "ev-gunnar-aldous-1"
+      ]
+    },
+    "value_add": {
+      "score": 5,
+      "evidence": [
+        "ev-gunnar-aldous-4",
+        "ev-gunnar-aldous-2"
+      ]
+    },
+    "content": {
+      "score": 2,
+      "evidence": [
+        "ev-gunnar-aldous-4",
+        "ev-gunnar-aldous-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "|Beatrix Holm": {
+    "thesis": {
+      "score": 1,
+      "evidence": [
+        "ev-beatrix-holm-2",
+        "ev-beatrix-holm-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 4,
+      "evidence": [
+        "ev-beatrix-holm-1"
+      ]
+    },
+    "recency": {
+      "score": 2,
+      "evidence": [
+        "ev-beatrix-holm-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 2,
+      "evidence": [
+        "ev-beatrix-holm-3",
+        "ev-beatrix-holm-2"
+      ]
+    },
+    "lead": {
+      "score": 2,
+      "evidence": [
+        "ev-beatrix-holm-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 1,
+      "evidence": [
+        "ev-beatrix-holm-3",
+        "ev-beatrix-holm-1"
+      ]
+    },
+    "value_add": {
+      "score": 2,
+      "evidence": [
+        "ev-beatrix-holm-4",
+        "ev-beatrix-holm-2"
+      ]
+    },
+    "content": {
+      "score": 2,
+      "evidence": [
+        "ev-beatrix-holm-4",
+        "ev-beatrix-holm-2"
+      ]
+    },
+    "reachability": {
+      "score": 3,
+      "evidence": []
+    }
+  },
+  "|Calum Reyes": {
+    "thesis": {
+      "score": 4,
+      "evidence": [
+        "ev-calum-reyes-2",
+        "ev-calum-reyes-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 2,
+      "evidence": [
+        "ev-calum-reyes-1"
+      ]
+    },
+    "recency": {
+      "score": 2,
+      "evidence": [
+        "ev-calum-reyes-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 3,
+      "evidence": [
+        "ev-calum-reyes-3",
+        "ev-calum-reyes-2"
+      ]
+    },
+    "lead": {
+      "score": 5,
+      "evidence": [
+        "ev-calum-reyes-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 2,
+      "evidence": [
+        "ev-calum-reyes-3",
+        "ev-calum-reyes-1"
+      ]
+    },
+    "value_add": {
+      "score": 2,
+      "evidence": [
+        "ev-calum-reyes-4",
+        "ev-calum-reyes-2"
+      ]
+    },
+    "content": {
+      "score": 4,
+      "evidence": [
+        "ev-calum-reyes-4",
+        "ev-calum-reyes-2"
+      ]
+    },
+    "reachability": {
+      "score": 6,
+      "evidence": []
+    }
+  },
+  "|Ottilia Brandt": {
+    "thesis": {
+      "score": 7,
+      "evidence": [
+        "ev-ottilia-brandt-2",
+        "ev-ottilia-brandt-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 7,
+      "evidence": [
+        "ev-ottilia-brandt-1"
+      ]
+    },
+    "recency": {
+      "score": 6,
+      "evidence": [
+        "ev-ottilia-brandt-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 7,
+      "evidence": [
+        "ev-ottilia-brandt-3",
+        "ev-ottilia-brandt-2"
+      ]
+    },
+    "lead": {
+      "score": 5,
+      "evidence": [
+        "ev-ottilia-brandt-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 6,
+      "evidence": [
+        "ev-ottilia-brandt-3",
+        "ev-ottilia-brandt-1"
+      ]
+    },
+    "value_add": {
+      "score": 4,
+      "evidence": [
+        "ev-ottilia-brandt-4",
+        "ev-ottilia-brandt-2"
+      ]
+    },
+    "content": {
+      "score": 4,
+      "evidence": [
+        "ev-ottilia-brandt-4",
+        "ev-ottilia-brandt-2"
+      ]
+    },
+    "reachability": {
+      "score": 8,
+      "evidence": []
+    }
+  },
+  "|Samir Qadri": {
+    "thesis": {
+      "score": 3,
+      "evidence": [
+        "ev-samir-qadri-2",
+        "ev-samir-qadri-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 5,
+      "evidence": [
+        "ev-samir-qadri-1"
+      ]
+    },
+    "recency": {
+      "score": 5,
+      "evidence": [
+        "ev-samir-qadri-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 4,
+      "evidence": [
+        "ev-samir-qadri-3",
+        "ev-samir-qadri-2"
+      ]
+    },
+    "lead": {
+      "score": 4,
+      "evidence": [
+        "ev-samir-qadri-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 5,
+      "evidence": [
+        "ev-samir-qadri-3",
+        "ev-samir-qadri-1"
+      ]
+    },
+    "value_add": {
+      "score": 3,
+      "evidence": [
+        "ev-samir-qadri-4",
+        "ev-samir-qadri-2"
+      ]
+    },
+    "content": {
+      "score": 3,
+      "evidence": [
+        "ev-samir-qadri-4",
+        "ev-samir-qadri-2"
+      ]
+    },
+    "reachability": {
+      "score": 0,
+      "evidence": []
+    }
+  },
+  "|Ruth Valkonen": {
+    "thesis": {
+      "score": 1,
+      "evidence": [
+        "ev-ruth-valkonen-2",
+        "ev-ruth-valkonen-1"
+      ]
+    },
+    "similar_companies": {
+      "score": 3,
+      "evidence": [
+        "ev-ruth-valkonen-1"
+      ]
+    },
+    "recency": {
+      "score": 1,
+      "evidence": [
+        "ev-ruth-valkonen-1"
+      ]
+    },
+    "stage_fit": {
+      "score": 4,
+      "evidence": [
+        "ev-ruth-valkonen-3",
+        "ev-ruth-valkonen-2"
+      ]
+    },
+    "lead": {
+      "score": 2,
+      "evidence": [
+        "ev-ruth-valkonen-1"
+      ]
+    },
+    "fund_cycle": {
+      "score": 3,
+      "evidence": [
+        "ev-ruth-valkonen-3",
+        "ev-ruth-valkonen-1"
+      ]
+    },
+    "value_add": {
+      "score": 3,
+      "evidence": [
+        "ev-ruth-valkonen-4",
+        "ev-ruth-valkonen-2"
+      ]
+    },
+    "content": {
+      "score": 3,
+      "evidence": [
+        "ev-ruth-valkonen-4",
+        "ev-ruth-valkonen-2"
+      ]
+    },
+    "reachability": {
+      "score": 5,
+      "evidence": []
+    }
+  }
+}

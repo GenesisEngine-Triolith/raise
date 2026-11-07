@@ -1,0 +1,83 @@
+[
+  {
+    "firm": "Fjordlight Capital",
+    "person": "Maja Sterner",
+    "kind": "touch",
+    "channel": "email",
+    "direction": "out",
+    "days_ago": 1,
+    "summary": "Cold email with one-line ask and deck link."
+  },
+  {
+    "firm": "Ravenhill Partners",
+    "person": "Oskar Fenwick",
+    "kind": "touch",
+    "channel": "email",
+    "direction": "out",
+    "days_ago": 28,
+    "summary": "Cold email about the EUR 1.5M pre-seed."
+  },
+  {
+    "firm": "Ravenhill Partners",
+    "person": "Oskar Fenwick",
+    "kind": "reply",
+    "channel": "email",
+    "direction": "in",
+    "days_ago": 21,
+    "summary": "Declined: fund is fully allocated for this vintage; the whole firm passes."
+  },
+  {
+    "firm": "Northwind Ventures",
+    "person": "Ada Lindqvist",
+    "kind": "touch",
+    "channel": "linkedin_dm",
+    "direction": "out",
+    "days_ago": 16,
+    "summary": "DM after a shared connection; short intro and deck link."
+  },
+  {
+    "firm": "Northwind Ventures",
+    "person": "Ada Lindqvist",
+    "kind": "reply",
+    "channel": "linkedin_dm",
+    "direction": "in",
+    "days_ago": 10,
+    "summary": "Replied with interest and asked for the data room; call booked."
+  },
+  {
+    "firm": "Copperleaf Capital",
+    "person": "Matthias Eberle",
+    "kind": "touch",
+    "channel": "email",
+    "direction": "out",
+    "days_ago": 6,
+    "summary": "Cold email with the 90-day no-show result."
+  },
+  {
+    "firm": "Wrenfield Ventures",
+    "person": "Anneli Korpela",
+    "kind": "touch",
+    "channel": "email",
+    "direction": "out",
+    "days_ago": 12,
+    "summary": "Cold email with deck link."
+  },
+  {
+    "firm": "Ashgrove Capital",
+    "person": "Rasmus Toft",
+    "kind": "touch",
+    "channel": "email",
+    "direction": "out",
+    "days_ago": 8,
+    "summary": "Cold email about Nordic clinic rollout."
+  },
+  {
+    "firm": "Pinecrest Nordic Fund",
+    "person": "Helga Vinter",
+    "kind": "touch",
+    "channel": "email",
+    "direction": "out",
+    "days_ago": 9,
+    "summary": "Cold email with traction numbers."
+  }
+]

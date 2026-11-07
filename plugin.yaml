@@ -1,0 +1,45 @@
+name: raise
+version: 0.1.0
+description: "Fundraising desk for founders: ranks investors on cited evidence, checks gates, drafts and lints outreach. Draft-only, it never sends."
+author: Triolith
+license: MIT
+homepage: https://github.com/GenesisEngine-Triolith/raise
+requires_hermes: ">=0.23.0"
+provides_tools:
+  - raise_setup
+  - raise_setup_status
+  - raise_profile_get
+  - raise_profile_set
+  - raise_import
+  - raise_find
+  - raise_evidence_add
+  - raise_evidence_list
+  - raise_rank
+  - raise_focus
+  - raise_explain
+  - raise_can_draft
+  - raise_draft
+  - raise_log
+  - raise_replies_check
+  - raise_brief
+  - raise_stats
+  - raise_export
+  - raise_sync
+  - raise_demo
+provides_hooks:
+  - pre_tool_call
+  - post_tool_call
+  - pre_llm_call
+config_schema:
+  backend: {type: str, default: sqlite, choices: [sqlite, notion, sheets, airtable, hubspot, csv], description: "Where the pipeline is mirrored"}
+  email_mode: {type: str, default: none, choices: [gmail, other, none], description: "How drafts reach the mailbox"}
+  email_draft_tool: {type: str, default: auto, description: "Mail tool that creates drafts, or auto"}
+  email_search_tool: {type: str, default: auto, description: "Mail tool that searches the inbox, or auto"}
+  linkedin_mode: {type: str, default: off, choices: [off, read_only, draft_dms], description: "LinkedIn use"}
+  linkedin_profile_views_per_day: {type: int, default: 20, description: "Daily LinkedIn profile view cap"}
+  linkedin_reads_per_day: {type: int, default: 40, description: "Daily LinkedIn read cap"}
+  linkedin_messages_per_day: {type: int, default: 0, description: "Daily LinkedIn message cap (0 = never)"}
+  draft_skills: {type: list, default: [], description: "Extra skills drafts must follow (voice, humanizer)"}
+  founder_name: {type: str, default: "", description: "Name used in sign-offs"}
+  focus_size: {type: int, default: 10, description: "How many investors raise_focus returns"}
+  demo_mode: {type: bool, default: false, description: "Use the fictional demo data; nothing touches a mailbox"}

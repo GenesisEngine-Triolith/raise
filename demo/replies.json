@@ -1,0 +1,42 @@
+[
+  {
+    "firm": "Copperleaf Capital",
+    "person": "Matthias Eberle",
+    "channel": "email",
+    "days_ago": 1,
+    "from": "matthias@copperleaf-capital.example",
+    "subject": "Re: Tidewell - EUR 1.5M pre-seed for independent clinics",
+    "body": "Thanks for the note. I'd love to see the deck, can you do a call Thursday? Any slot after 14:00 works.",
+    "thread_ref": "thr-eberle-001"
+  },
+  {
+    "firm": "Wrenfield Ventures",
+    "person": "Anneli Korpela",
+    "channel": "email",
+    "days_ago": 2,
+    "from": "anneli@wrenfield-ventures.example",
+    "subject": "Re: Tidewell - EUR 1.5M pre-seed for independent clinics",
+    "body": "Appreciate you reaching out. Too early for us, come back when you have 12 months of revenue.",
+    "thread_ref": "thr-korpela-001"
+  },
+  {
+    "firm": "Ashgrove Capital",
+    "person": "Rasmus Toft",
+    "channel": "email",
+    "days_ago": 1,
+    "from": "rasmus@ashgrove-capital.example",
+    "subject": "Automatic reply: Re: Tidewell - EUR 1.5M pre-seed for independent clinics",
+    "body": "I am out of the office until 16 November with limited access to email. For urgent matters contact hello@ashgrove-capital.example.",
+    "thread_ref": "thr-toft-001"
+  },
+  {
+    "firm": "Pinecrest Nordic Fund",
+    "person": "Helga Vinter",
+    "channel": "email",
+    "days_ago": 3,
+    "from": "helga@pinecrest-nordic-fund.example",
+    "subject": "Re: Tidewell - EUR 1.5M pre-seed for independent clinics",
+    "body": "Interesting. Quick question before we go further: how many of the 38 clinics are on annual contracts versus monthly?",
+    "thread_ref": "thr-vinter-001"
+  }
+]

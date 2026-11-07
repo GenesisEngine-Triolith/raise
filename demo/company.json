@@ -1,0 +1,88 @@
+{
+  "profile": {
+    "name": "Tidewell",
+    "one_liner": "Booking, reminders and billing in one subscription for independent physiotherapy clinics.",
+    "stage": "pre-seed",
+    "round_amount": 1500000,
+    "instrument": "SAFE",
+    "use_of_funds": "Two engineers, one customer-success lead, and a German launch.",
+    "timeline": "Close by end of January 2027",
+    "geo": [
+      "sweden",
+      "nordics",
+      "europe"
+    ],
+    "sector": "Healthcare practice-management software (B2B SaaS)",
+    "ask": "EUR 1.5M pre-seed, with EUR 300k to 600k from a lead.",
+    "ideal_investor": "Pre-seed or seed fund or angel that has backed vertical SaaS for healthcare or small-service businesses in the Nordics or Europe.",
+    "anti_profile": "US-only funds, growth funds with cheques above EUR 1.5M, and investors who exclude healthcare software.",
+    "style_note": "Plain, short, numbers first. No hype words. One ask per message.",
+    "founder_name": "Anna Holm"
+  },
+  "claims": [
+    {
+      "text": "Tidewell is live in 38 independent clinics across Sweden and Denmark.",
+      "value": "38 clinics",
+      "tag": "verified",
+      "source": "customer list, October 2026"
+    },
+    {
+      "text": "Median no-show rate fell 31% in the first 90 days.",
+      "value": "31%",
+      "tag": "verified",
+      "source": "pilot analysis of 22 clinics, September 2026"
+    },
+    {
+      "text": "ARR of EUR 410k.",
+      "value": "EUR 410k",
+      "tag": "unverified",
+      "source": "pitch deck v4, slide 6; not yet matched to billing export"
+    },
+    {
+      "text": "Net revenue retention of 112% over the trailing 12 months.",
+      "value": "112%",
+      "tag": "verified",
+      "source": "billing export, October 2026"
+    },
+    {
+      "text": "Gross margin of 78%.",
+      "value": "78%",
+      "tag": "verified",
+      "source": "management accounts, Q3 2026"
+    },
+    {
+      "text": "Average contract of EUR 9.4k per clinic per year.",
+      "value": "EUR 9.4k",
+      "tag": "verified",
+      "source": "billing export, October 2026"
+    },
+    {
+      "text": "Founders have eleven combined years in clinic operations software.",
+      "value": "11 years",
+      "tag": "verified",
+      "source": "founder CVs"
+    },
+    {
+      "text": "Plan to reach EUR 1.2M ARR by end of 2027.",
+      "value": "EUR 1.2M",
+      "tag": "projection",
+      "source": "financial model v3"
+    }
+  ],
+  "branches": {
+    "problem": 90,
+    "customer": 85,
+    "product_stage": 80,
+    "traction": 40,
+    "market": 65,
+    "competition": 70,
+    "team": 75,
+    "round": 100,
+    "ideal_investor": 0,
+    "anti_profile": 60,
+    "risks": 60,
+    "dreaded_questions": 65,
+    "voice": 80
+  },
+  "deck_text": "Tidewell: the operating system for independent clinics.\n\nProblem. Independent physiotherapy and rehab clinics in the Nordics run on paper calendars, spreadsheets and a billing tool from 2009. The average clinic loses 14% of booked hours to no-shows and spends nine hours a week chasing invoices. Owners are clinicians, not administrators, and they feel every lost hour.\n\nSolution. Tidewell is one subscription that covers online booking, automated reminders, insurance and subsidy billing, and a simple daily dashboard. Setup takes an afternoon. A clinic migrates its calendar by uploading a file; we handle the rest.\n\nTraction. Tidewell is live in 38 clinics across Sweden and Denmark. The median no-show rate fell 31% in the first 90 days. Net revenue retention is 112% and gross margin is 78%. Annual recurring revenue is EUR 410k, with an average contract of EUR 9.4k per clinic per year. We have not lost a clinic to a competitor in the last two quarters.\n\nMarket. There are roughly 46,000 independent allied-health clinics in the Nordics and DACH. At our average contract that is a EUR 430M serviceable market, before payments.\n\nCompetition. Large practice-management suites target hospitals and charge for features small clinics never use. Generic booking apps ignore billing. Tidewell is built for the five-chair clinic.\n\nTeam. Three founders: a former clinic owner, a billing-systems engineer and a growth lead who ran sales at a scheduling company. Eleven combined years in clinic operations software.\n\nRound. We are raising EUR 1.5M pre-seed on a SAFE to hire two engineers and a customer-success lead, and to open Germany. Plan: EUR 1.2M ARR by end of 2027."
+}
