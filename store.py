@@ -69,7 +69,12 @@ def iso(dt):
 
 
 def parse(ts):
-    return datetime.fromisoformat(ts) if ts else None
+    if not ts:
+        return None
+    ts = str(ts).strip()
+    if re.fullmatch(r"\d{4}(-\d{2})?", ts):  # models cite "2024" or "2025-08": pad to the first day
+        ts += "-01-01"[:10 - len(ts)]
+    return datetime.fromisoformat(ts)
 
 
 def name_key(name):

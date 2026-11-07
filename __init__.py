@@ -73,7 +73,7 @@ def register(ctx):
             ctx.register_automation_blueprint(**b)
 
     def hooks_():
-        sf = safety.Safety(db_fn=tools.db, cfg_fn=lambda: {k: tools.cfg(k) for k in safety.DEFAULTS})
+        sf = safety.Safety(db_fn=tools.db, cfg_fn=lambda: {k: tools.cfg(k) for k in safety.DEFAULTS}, next_fn=tools.next_step)
         ctx.register_hook("pre_tool_call", sf.pre_tool_call)
         ctx.register_hook("post_tool_call", sf.post_tool_call)
         ctx.register_hook("pre_llm_call", sf.pre_llm_call)

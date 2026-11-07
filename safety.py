@@ -40,7 +40,10 @@ RECIPIENT_KEYS = ("to", "cc", "bcc", "recipient", "recipients", "email", "addres
                   "toRecipients", "ccRecipients", "bccRecipients", "to_recipients")
 BODY_KEYS = ("body", "text", "content", "message", "html", "plain", "body_text", "body_html")
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
-TALK = re.compile(r"investor|fundrais|\braise\b|\bvc\b|angel|pitch|draft|repl(y|ies)|pipeline|outreach|follow.?up", re.I)
+# the agent may read Raise's files, never change them (code edits or SQL would bypass the gates)
+PROTECTED = re.compile(r"plugins[\\/]+raise\b|plugin-data[\\/]+raise\b|raise[\\/]+(gates|tools|store|safety)\.py", re.I)
+WRITEISH = re.compile(r"patch|write|edit|replace|delete|remove|move|rename|terminal|shell|bash|exec|run|python|code|sql", re.I)
+TALK = re.compile(r"investor|fundrais|\braise\b|\bvc\b|angel|pitch|draft|repl(y|ies)|pipeline|outreach|follow.?up|next step", re.I)
 
 
 def body_hash(text):
@@ -90,7 +93,8 @@ def _body_text(args):
 
 
 class Safety:
-    def __init__(self, db_fn, cfg_fn=lambda: {}, now_fn=s.utcnow):
+    def __init__(self, db_fn, cfg_fn=lambda: {}, now_fn=s.utcnow, next_fn=lambda db: "use raise_brief."):
+        self.next_fn = next_fn
         self.db_fn, self.cfg_fn, self.now_fn = db_fn, cfg_fn, now_fn
 
     def cfg(self, key):
@@ -154,6 +158,10 @@ class Safety:
     def _pre(self, tool, args):
         if tool.startswith("raise_"):
             return None
+        if WRITEISH.search(tool) and PROTECTED.search(json.dumps(args, default=str)):
+            return {"action": "block", "message": (
+                "Raise's code and database are protected: the gates only mean something if the agent cannot edit them. "
+                "Use the raise_* tools. If one of them fails, tell the founder the exact error instead of working around it.")}
         db = self.db_fn()
         if self.is_linkedin(tool):
             until = self.paused_until(db)
@@ -245,14 +253,25 @@ class Safety:
             pass
         return None
 
+    def setup_context(self, db):
+        """While /raise setup waits on a free-text step (deck, interview), the model must know the question:
+        slash-command output never reaches it, so a bare URL or '1' would otherwise mean nothing."""
+        w = json.loads(s.meta_get(db, "setup_waiting") or "{}")
+        if not w or self.now_fn() - s.parse(w["at"]) > timedelta(hours=6):
+            return ""
+        return (f"[Raise] Setup is in progress. The founder was asked: \"{w['question']}\" Treat their message as the "
+                f"answer to that step. Do the step, then call raise_setup with question_id='{w['qid']}' and answer='done' "
+                "(or 'skip' if they skip) to get the next question.")
+
     def pre_llm_call(self, user_message="", **_):
         try:
-            if not TALK.search(user_message or ""):
-                return None
             db = self.db_fn()
+            setup = self.setup_context(db)
+            if not TALK.search(user_message or ""):
+                return {"context": setup} if setup else None
             n = db.execute("SELECT COUNT(*) FROM targets WHERE archived = 0").fetchone()[0]
             if not n:
-                return None
+                return {"context": setup} if setup else None
             replies = db.execute(
                 "SELECT COUNT(*) FROM events e WHERE kind = 'reply' AND direction = 'in' AND NOT EXISTS "
                 "(SELECT 1 FROM events o WHERE o.target_id = e.target_id AND o.kind = 'touch' AND o.at > e.at)"
@@ -261,7 +280,7 @@ class Safety:
             paused = self.paused_until(db)
             ctx = (f"[Raise] Pipeline: {n} investors, {replies} replies awaiting an answer, {drafts} drafts waiting."
                    + (f" LinkedIn paused until {paused:%a %H:%M} UTC." if paused else "")
-                   + " Use raise_brief for today's actions. Raise is draft-only and never sends.")
-            return {"context": ctx}
+                   + f" Next step: {self.next_fn(db)} Raise is draft-only and never sends.")
+            return {"context": " ".join(x for x in (setup, ctx) if x)}
         except Exception:
             return None

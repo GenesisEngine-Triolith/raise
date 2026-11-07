@@ -207,7 +207,7 @@ def can_draft(db, tid, now=None):
         f"SELECT created_at FROM drafts WHERE target_id = ? AND status IN ({','.join('?' * len(DRAFT_OPEN))}) "
         "AND created_at > ? ORDER BY created_at DESC LIMIT 1", (tid, *DRAFT_OPEN, open_since)).fetchone()
     if d:
-        reasons.append(f"There is an unsent draft for {who} from {_day(s.parse(d['created_at']))}; send or discard it first.")
+        reasons.append(f"There is an unsent draft for {who} from {_day(s.parse(d['created_at']))}; send it, or run raise_draft with redo=true to replace it.")
 
     if mode == "cold" and colleagues:
         recent = s.iso(now - timedelta(days=FIRM_HOLD_DAYS))

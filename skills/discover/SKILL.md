@@ -57,4 +57,4 @@ Return results as rows for `raise_import`, one per person:
 
 `name, role, firm, tier, firm_url, source_url, cheque_range (if self-reported, label it), notes`
 
-Dedupe by person (normalised name plus firm), never by firm domain. Add `raise_evidence_add` records for each deal and thesis found, with `source_url`. Report counts per tier and what was left unverified.
+Dedupe by person (normalised name plus firm), never by firm domain. Before searching, call `raise_export` with `format: rows` and skip anyone already in the pipeline, so asking again finds new people. Add `raise_evidence_add` records for each deal and thesis found, with `source_url`. Report counts per tier and what was left unverified. Then continue with the `next` step that `raise_import` returns: research each new investor with `raise_find`, then rank them with `raise_rank`.

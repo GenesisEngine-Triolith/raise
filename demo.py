@@ -15,10 +15,17 @@ def _key(firm, person):
     return f"{firm or ''}|{person}"
 
 
+def has_real_data(d):
+    """Anything the founder entered: investors, a profile or claims, outside a loaded demo."""
+    if store.meta_get(d, "demo_loaded"):
+        return False
+    return any(d.execute(f"SELECT 1 FROM {t} LIMIT 1").fetchone() for t in ("targets", "profile", "claims", "branches"))
+
+
 def load(d):
-    if d.execute("SELECT COUNT(*) FROM targets").fetchone()[0] and not store.meta_get(d, "demo_loaded"):
-        return {"ok": False, "error": "This database already holds real investors. Demo load would wipe them; "
-                "run 'hermes raise delete' first if you really want a clean start."}
+    if has_real_data(d):
+        return {"ok": False, "error": "Your own company or investors are already set up, and the demo would replace them. "
+                "Nothing was changed. To wipe your data on purpose, run '/raise delete confirm'."}
     tools.wipe(d)
     co, inv = _load_json("company.json"), _load_json("investors.json")
     store.profile_set(d, co["profile"])
@@ -51,10 +58,17 @@ def load(d):
         gates.apply_gates(d, r["id"], prof)
     return {"ok": True, "demo_mode": True, "company": co["profile"]["name"], "investors": res["created"],
             "evidence": len(ekeys), "ranked": ranked.get("ranked"),
-            "next": "Ranking is done. Run raise_focus, then raise_draft with top=10."}
+            "next": "Ranking is done. Run raise_focus, then raise_draft with top=10.",
+            "note": CLEAR_HINT}
 
 
-def reset(d):
+CLEAR_HINT = ("This is fictional demo data. Before you set up your own company, clear it with '/raise demo clear' "
+              "(or 'hermes raise demo clear'), so demo investors never mix with your real pipeline.")
+
+
+def clear(d):
+    if has_real_data(d):
+        return {"ok": False, "error": "No demo is loaded; this is your own data, so nothing was cleared."}
     tools.wipe(d)
     tools.set_cfg("demo_mode", False)
-    return {"demo_mode": False, "message": "All Raise data wiped."}
+    return {"ok": True, "demo_mode": False, "message": "Demo cleared. Run '/raise setup' to set up your own company."}

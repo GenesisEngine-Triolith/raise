@@ -29,9 +29,38 @@ hermes plugins enable raise
 ```
 
 1. `/raise demo` loads a fictional company and 40 invented investors. No accounts, no network. You can rank, draft, check replies and see the daily brief right away.
-2. `/raise setup` starts onboarding for your own company.
-3. Ask: "draft emails for my top 10".
-4. `/raise next` shows today's actions.
+2. `/raise demo clear` removes the demo before you set up your own company. `/raise setup` offers to do this for you, and Raise refuses to import investors or save a profile while the demo is loaded, so fictional and real data never mix. The demo never loads over your own data, and `clear` never deletes it.
+3. `/raise setup` starts onboarding for your own company.
+
+## How to use it
+
+After setup, every step is a sentence you type in chat. `/raise next` shows where you are at any point, and "do my next Raise steps" has the agent do them.
+
+| Step | Say this | What Raise does |
+|---|---|---|
+| 1. Find investors | "find 5 investors for my round" | The `raise:discover` skill searches public sources and imports people, not just firms. People already in your pipeline are skipped, so you can ask again for 5 more. You can also import a CSV, your CRM or sheet, or LinkedIn `Connections.csv`. |
+| 2. Research them | "research the new investors" | `raise_find` reads each investor's site and deals and stores facts with their sources, then checks the firm gates (stage, cheque, geography, still active). |
+| 3. Rank them | "rank them" | The agent scores each dimension by citing evidence ids. An uncited score counts as 0, and code computes the total. "Why is X third?" shows the evidence. |
+| 4. Draft | "draft emails for my top 5" | Each investor goes through the draft gate first. Raise refuses anyone you already emailed in the last 3 working days, anyone with an unsent draft, any firm that passed or is already in talks with a colleague, and anyone at 3 touches on that channel. Every draft is then linted against your verified claims. Email drafts land in your mailbox's drafts folder. |
+| 5. Send and log | send it yourself, then "I sent the email to Ann" | Raise never sends. Logging the send (`raise_log`) is how the gates know who you contacted, so log every message you send, including ones you wrote yourself. |
+| 6. Replies | "check replies" | Replies are sorted (interest, question, pass, soft pass, out of office) with the investor's own words quoted. A pass closes the firm; a soft pass comes back in 90 days. |
+| 7. Every day | `/raise next` | Up to 5 actions: replies first, then follow-ups due, drafts waiting, investors to research or rank, then new outreach. |
+
+Repeat steps 1-4 whenever the pipeline runs thin. Each tool result also names the next step, so the agent keeps going in order.
+
+## Tools that make Raise better
+
+Raise has no network code of its own. It uses the tools your Hermes already has and finds them by name, so the more you connect, the more it can do. Nothing here is required: with no extra tools, Raise still works with a CSV import, local SQLite and drafts saved as files.
+
+| For | Connect | How |
+|---|---|---|
+| Research (finding investors, reading their sites) | A web search and a page reader: Firecrawl, Tavily, Exa, Parallel, Perplexity, Brave or SearXNG. A Nous Portal subscription includes search and page reading. | `hermes setup tools`. Jina Reader or another reader works as an MCP server via `hermes mcp`. |
+| Email drafts in your mailbox | A mail tool that can create drafts: a Gmail, Google Workspace or Outlook MCP server, or a mail skill | `hermes mcp`, then set `email_mode` with `/raise setup` |
+| Replies | The same mail tool's search or read tool | Found automatically |
+| Your pipeline in a CRM or sheet | Notion, Airtable, Google Sheets or HubSpot | `hermes connectors connect notion` (or `airtable`), or an MCP server via `hermes mcp`, then choose it in `/raise setup` |
+| LinkedIn (optional) | A LinkedIn MCP server | `hermes mcp`. Raise caps daily use and pauses for 72 hours after a login or rate-limit error. |
+
+Research reads up to 5 pages per investor and asks your model to pull out dated, sourced facts, so it takes a while per investor. A fast model with a large context window works best.
 
 ## What it does
 
@@ -67,7 +96,7 @@ hermes plugins enable raise
 | `raise_stats` | Counts by stage, gate, draft status, channel and reply |
 | `raise_export` | Rows or CSV of the pipeline, each with its latest draft; `target_ids` for just some. Ask "draft two investors and put them in my CRM" and the agent writes the rows with your HubSpot/Pipedrive/Notion/Sheets tool |
 | `raise_sync` | Rows changed since the last export, to write to your own tracker |
-| `raise_demo` | Load or reset the demo data |
+| `raise_demo` | Load the demo, or clear it (demo data only) |
 
 ## Commands
 
@@ -78,11 +107,11 @@ hermes plugins enable raise
 | `/raise next` | The daily brief as text |
 | `/raise drafts` | Drafts waiting for you |
 | `/raise replies` | Check replies |
-| `/raise demo` | Load the demo |
+| `/raise demo` | Load the demo; `/raise demo clear` removes it |
 | `/raise export` | Export the pipeline |
 | `/raise delete confirm` | Wipe all Raise data (without `confirm` it only explains) |
 
-CLI: `hermes raise setup`, `doctor`, `export`, `demo`, `delete`. `doctor` checks the database, detected tools, profile completeness, LinkedIn pause state, bundled skills and config.
+CLI: `hermes raise setup`, `doctor`, `export`, `demo [load|clear]`, `delete`. `doctor` checks the database, detected tools, profile completeness, LinkedIn pause state, bundled skills and config.
 
 Bundled skills: `raise:draft`, `raise:humanizer`, `raise:grill`, `raise:voice`, `raise:fact-check`, `raise:validate`, `raise:discover`, `raise:reply-triage`.
 

@@ -34,7 +34,7 @@ Never batch several answers into one write. Checkpoint one answer at a time. If 
 
 ## Interview method
 
-- Ask one question at a time. For each, provide a recommended answer, your best inference from the deck and profile, so the founder can simply confirm, correct, or redirect. Use choice buttons where the answer is a choice.
+- Ask one question at a time. For each, provide a recommended answer, your best inference from the deck and profile, and end every question with this line so the founder knows how to answer: "Reply **yes** to keep it, **fix:** plus what to change, your own answer in your words, or **skip**." Treat any other reply as the founder's own answer. Use choice buttons where the answer is a choice.
 - Resolve dependencies in order: settle the upstream branch before the ones that depend on it.
 - If a question can be answered by reading a document the founder has already given you (deck, site, wiki), read it instead of asking, and only surface what is net-new.
 - Flag deck-versus-answer contradictions out loud and store them as flags. Never resolve them silently, never pick a side.

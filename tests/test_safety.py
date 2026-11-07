@@ -166,3 +166,13 @@ def test_graph_tool_with_a_neutral_name_is_still_guarded():
     a = c.email_args("mcp_graph_create_message", "ada@north.example", "Hi", "Own text.", props=GRAPH)
     assert blocked(sf.pre_tool_call("mcp_graph_create_draft", a))
     assert blocked(sf.pre_tool_call("mcp_graph_send", a))
+
+
+def test_agent_cannot_edit_raise_code_or_database():
+    db, _, sf, _ = make()
+    for tool, args in [("patch", {"path": "/opt/data/plugins/raise/gates.py", "old": "a", "new": "b"}),
+                       ("terminal", {"command": "sqlite3 /opt/data/plugin-data/raise/data.db 'DELETE FROM events'"}),
+                       ("write_file", {"path": "C:\\Users\\me\\.hermes\\plugins\\raise\\tools.py"})]:
+        assert sf.pre_tool_call(tool_name=tool, args=args)["action"] == "block", tool
+    assert sf.pre_tool_call(tool_name="read_file", args={"path": "/opt/data/plugins/raise/gates.py"}) is None
+    assert sf.pre_tool_call(tool_name="terminal", args={"command": "ls ~/projects/fundraise"}) is None
