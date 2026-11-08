@@ -176,3 +176,12 @@ def test_agent_cannot_edit_raise_code_or_database():
         assert sf.pre_tool_call(tool_name=tool, args=args)["action"] == "block", tool
     assert sf.pre_tool_call(tool_name="read_file", args={"path": "/opt/data/plugins/raise/gates.py"}) is None
     assert sf.pre_tool_call(tool_name="terminal", args={"command": "ls ~/projects/fundraise"}) is None
+
+
+def test_email_scan_is_fast_on_long_text_without_at_sign():
+    import time
+    from raiseplug import safety
+    t = time.time()
+    assert safety.EMAIL.findall("a" * 200_000) == []
+    assert time.time() - t < 1
+    assert safety.EMAIL.findall("mail ada.k+x@north.example now") == ["ada.k+x@north.example"]

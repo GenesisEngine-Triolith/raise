@@ -314,10 +314,33 @@ def import_connections(d, path):
     return {"connections_read": conn, "marked_connected": connected, "intro_paths_added": paths}
 
 
+def _safe_csv(path):
+    """Resolve a user-given CSV path; refuse anything that is not a plain .csv outside Hermes' own folder
+    and outside hidden folders in the home directory (.env, .ssh, ...). Returns (real_path, error)."""
+    try:
+        real = os.path.realpath(os.path.expanduser(str(path)))
+    except (OSError, ValueError):
+        return None, "That path could not be resolved."
+    home = os.path.realpath(os.path.expanduser("~"))
+    hh = os.path.realpath(os.environ.get("HERMES_HOME") or os.path.join(home, ".hermes"))
+    rel = os.path.relpath(real, home) if real.startswith(home + os.sep) else ""
+    hidden = rel and any(part.startswith(".") for part in rel.split(os.sep)[:-1])
+    if not real.lower().endswith(".csv") or not os.path.isfile(real):
+        return None, "Only an existing .csv file can be imported by path. For other sources, pass rows."
+    if real == hh or real.startswith(hh + os.sep) or hidden:
+        return None, "Raise does not read files inside the Hermes folder or hidden folders. Move the CSV somewhere else first."
+    return real, None
+
+
 def t_import(a):
     _no_demo()
     d, res = db(), {"ok": True}
     rows = a.get("rows")
+    for key in ("csv_path", "linkedin_connections_csv"):
+        if a.get(key):
+            a[key], err = _safe_csv(a[key])
+            if err:
+                return _json({"ok": False, "error": err})
     if a.get("csv_path"):
         p = a["csv_path"]
         with open(p, newline="", encoding="utf-8-sig") as fh:

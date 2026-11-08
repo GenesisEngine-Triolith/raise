@@ -39,7 +39,7 @@ OUTBOX = re.compile(r"raise-outbox[\\/]+(\d+)\.txt")  # checked drafts saved for
 RECIPIENT_KEYS = ("to", "cc", "bcc", "recipient", "recipients", "email", "address", "to_email", "emails",
                   "toRecipients", "ccRecipients", "bccRecipients", "to_recipients")
 BODY_KEYS = ("body", "text", "content", "message", "html", "plain", "body_text", "body_html")
-EMAIL = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
+EMAIL = re.compile(r"(?<![\w.+-])[\w.+-]+@[\w-]+(?:\.[\w-]+)+")  # lookbehind keeps long no-@ runs linear
 # the agent may read Raise's files, never change them (code edits or SQL would bypass the gates)
 PROTECTED = re.compile(r"plugins[\\/]+raise\b|plugin-data[\\/]+raise\b|raise[\\/]+(gates|tools|store|safety)\.py", re.I)
 WRITEISH = re.compile(r"patch|write|edit|replace|delete|remove|move|rename|terminal|shell|bash|exec|run|python|code|sql", re.I)

@@ -333,3 +333,28 @@ def test_contact_scan_reads_the_firms_own_site(tmp_path, monkeypatch):
     r = call("raise_find", firm="North Fund", contact_only=True)["contact"]
     assert not r["found"] and "does not read like an investor" in r["why"]
     assert db.execute("SELECT email FROM firms").fetchone()[0] is None
+
+
+def test_import_by_path_refuses_secrets_but_rows_still_work(tmp_path, monkeypatch):
+    ctx, db, call = boot(tmp_path)
+    home = tmp_path / "home"
+    (home / ".ssh").mkdir(parents=True)
+    (home / ".hermes").mkdir()
+    monkeypatch.setenv("HOME", str(home))
+    monkeypatch.setenv("USERPROFILE", str(home))
+    monkeypatch.setenv("HERMES_HOME", str(home / ".hermes"))
+    secret = home / ".hermes" / ".env"
+    secret.write_text("API_KEY=hunter2\n", encoding="utf-8")
+    hidden_csv = home / ".ssh" / "list.csv"
+    hidden_csv.write_text("Company,Name\nAcme,Jo\n", encoding="utf-8")
+    hermes_csv = home / ".hermes" / "list.csv"
+    hermes_csv.write_text("Company,Name\nAcme,Jo\n", encoding="utf-8")
+    for bad in (secret, hidden_csv, hermes_csv, tmp_path / "missing.csv"):
+        r = call("raise_import", csv_path=str(bad))
+        assert r["ok"] is False and "hunter2" not in json.dumps(r), bad
+    assert call("raise_import", linkedin_connections_csv=str(secret))["ok"] is False
+    good = home / "investors.csv"
+    good.write_text("Company,Name\nAcme Ventures,Jo Smith\n", encoding="utf-8")
+    assert call("raise_import", csv_path=str(good))["created"] == 1
+    # Notion / CRM / any tool hands over rows: no file path involved, unchanged
+    assert call("raise_import", rows=[{"person": "Ann Lee", "firm": "Beta Capital"}])["ok"] is True
