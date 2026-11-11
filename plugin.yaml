@@ -1,5 +1,5 @@
 name: raise
-version: 0.1.0
+version: 0.1.1
 description: "Fundraising desk for founders: ranks investors on cited evidence, checks gates, drafts and lints outreach. Draft-only, it never sends."
 author: Triolith
 license: MIT
