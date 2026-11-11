@@ -774,8 +774,8 @@ def _place(d, t, did, channel, subject, body):
     return f"{tool} (drafts folder)", None
 
 
-def _lint(body, channel, verified, facts, prof):
-    return linter.lint(body, channel=channel, verified=verified, facts=facts, round_amount=prof.get("round_amount"))
+def _lint(body, channel, verified, facts, prof, dates=()):
+    return linter.lint(body, channel=channel, verified=verified, facts=facts, round_amount=prof.get("round_amount"), dates=dates)
 
 
 def _draft_one(d, tid, g, prof, skills, instructions):
@@ -823,7 +823,8 @@ def _draft_one(d, tid, g, prof, skills, instructions):
     writer = "llm" if text else "template"
     subject, body = _split_subject(text, channel, t, prof) if text else (
         _split_subject("", channel, t, prof)[0], _template(t, channel, hook, prof, claim, vias[0] if vias else None))
-    res = _lint(body, channel, vlist, facts, prof)
+    sent = [r["at"] for r in d.execute("SELECT at FROM events WHERE target_id = ? AND kind IN ('touch','reply')", (tid,))]
+    res = _lint(body, channel, vlist, facts, prof, sent)
     caught = [f"{h['rule']}: {h['message']}" for h in res["hard"]]
     rewritten = False
     if writer == "llm" and (res["hard"] or res["warnings"]):
@@ -833,7 +834,7 @@ def _draft_one(d, tid, g, prof, skills, instructions):
                            {"role": "user", "content": f"Rewrite the message once. Fix every problem and change nothing else:\n{msgs}"}])
         if again:
             s2, b2 = _split_subject(again, channel, t, prof)
-            r2 = _lint(b2, channel, vlist, facts, prof)
+            r2 = _lint(b2, channel, vlist, facts, prof, sent)
             if len(r2["hard"]) <= len(res["hard"]):
                 subject, body, res, rewritten = s2 or subject, b2, r2, True
     item = {"target_id": tid, "who": who, "firm": t["firm_name"], "channel": channel, "mode": mode, "subject": subject,

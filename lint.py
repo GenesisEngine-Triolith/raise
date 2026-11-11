@@ -36,6 +36,9 @@ SIGNOFF = re.compile(r"^\s*(best|cheers|thanks|thank you|regards|kind regards|wa
 NUM = re.compile(r"(?<![\w.])([$€£]\s?)?(\d+(?:[.,]\d+)*)(\s?(?:k|m|mn|bn|b|%|x|million|billion|thousand)\b|%)?",
                  re.I)
 TIME_UNIT = re.compile(r"\s*-?\s*(minutes?|mins?|hours?|hrs?|am|pm|days?|weeks?|months?|years?)\b", re.I)
+MONTHS = "january february march april may june july august september october november december".split()
+MONTH_AFTER = re.compile(r"(?:st|nd|rd|th)?\s+(?:of\s+)?(%s)\b" % "|".join(MONTHS), re.I)
+MONTH_BEFORE = re.compile(r"\b(%s)\s+$" % "|".join(MONTHS), re.I)
 MULT = {"k": 1e3, "thousand": 1e3, "m": 1e6, "mn": 1e6, "million": 1e6, "b": 1e9, "bn": 1e9, "billion": 1e9}
 STOP = {"their", "there", "about", "which", "would", "could", "should", "these", "those", "other", "after",
         "before", "invest", "invests", "invested", "investing", "investor", "investors", "company", "companies",
@@ -66,6 +69,15 @@ def numbers(text):
 
 def _is_year(v, pct, m):
     return not pct and float(v).is_integer() and 1990 <= v <= 2100 and len(m.group(2)) == 4
+
+
+def _logged_date(text, m, dates):
+    """The number is the day of a date with a logged message to or from this investor ("I wrote you on 27 October"):
+    a reference to the thread, not a claim. A date with no logged message stays a hard fail."""
+    mo = MONTH_AFTER.match(text, m.end()) or MONTH_BEFORE.search(text[:m.start()])
+    if not (mo and m.group(2).isdigit()):
+        return False
+    return "%02d-%02d" % (MONTHS.index(mo.group(1).lower()) + 1, int(m.group(2))) in {str(d)[5:10] for d in dates}
 
 
 def _body_without_signoff(text):
@@ -105,8 +117,9 @@ def personalised(text, facts):
     return False
 
 
-def lint(text, *, channel="email", verified=(), facts=(), round_amount=None, max_words=None):
-    """verified: texts/values of verified claims. facts: claims of the investor's cited evidence."""
+def lint(text, *, channel="email", verified=(), facts=(), round_amount=None, max_words=None, dates=()):
+    """verified: texts/values of verified claims. facts: claims of the investor's cited evidence.
+    dates: ISO dates of the logged messages with this investor."""
     text = text or ""
     hard, warn = [], []
 
@@ -118,6 +131,8 @@ def lint(text, *, channel="email", verified=(), facts=(), round_amount=None, max
             continue  # years and small counts are not claims
         if TIME_UNIT.match(text, m.end()):
             continue  # "a 20 minute call", "next 2 weeks"
+        if _logged_date(text, m, dates):
+            continue  # ponytail: English month names only; add other languages when the plugin drafts in them
         if not any(abs(v - a) <= max(0.01 * a, 0.5) and pct == ap for a, ap in allowed):
             hard.append(_hit("unverified_number",
                              f"'{m.group(0).strip()}' is not in your verified claims or the investor's cited facts.",

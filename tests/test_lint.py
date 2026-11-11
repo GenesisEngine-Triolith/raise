@@ -40,6 +40,15 @@ def test_investor_fact_number_is_allowed():
     assert lint(text, verified=VERIFIED, facts=FACTS)["ok"]
 
 
+def test_date_of_a_logged_message_is_not_an_unverified_number():
+    text = GOOD.replace("Saw that", "I wrote you on 27 October. Saw that")
+    assert "unverified_number" in rules(lint(text, verified=VERIFIED, facts=FACTS), "hard")                      # nothing logged
+    assert "unverified_number" in rules(lint(text, verified=VERIFIED, facts=FACTS, dates=["2026-10-24T09:00:00"]), "hard")  # other day
+    assert lint(text, verified=VERIFIED, facts=FACTS, dates=["2026-10-27T09:00:00+00:00"])["ok"]
+    assert lint(text.replace("27 October", "October 27th"), verified=VERIFIED, facts=FACTS, dates=["2026-10-27"])["ok"]
+    assert "unverified_number" in rules(lint(text.replace("27 October", "27 clinics"), verified=VERIFIED, facts=FACTS, dates=["2026-10-27"]), "hard")
+
+
 def test_no_personalisation_is_hard_fail():
     text = GOOD.replace("Saw that Northwind led the Clinicly seed in August. ", "")
     assert "no_personalisation" in rules(lint(text, verified=VERIFIED, facts=FACTS), "hard")
